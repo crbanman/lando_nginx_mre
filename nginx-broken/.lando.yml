@@ -1,0 +1,11 @@
+name: nginx-broken
+services:
+  nginx:
+    type: nginx
+    ssl: true
+    config:
+      vhosts: default.conf.tpl
+
+proxy:
+  nginx:
+    - nginx-broken.lndo.site

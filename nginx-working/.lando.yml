@@ -1,0 +1,11 @@
+name: nginx-working
+services:
+  nginx:
+    type: nginx
+    ssl: true
+    config:
+      vhosts: default.conf.tpl
+
+proxy:
+  nginx:
+    - nginx-working.lndo.site
